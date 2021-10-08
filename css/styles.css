@@ -12,7 +12,8 @@
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: var(--first-text-color);
 }
 
 .visually-hidden {
@@ -37,7 +38,7 @@ body {
 }
 
 .logo {
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -60,6 +61,10 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 /*------HEADER------ */
@@ -86,7 +91,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--first-text-color);
+  color: inherit;
 }
 
 .contacts-link:hover,
@@ -135,11 +140,9 @@ body {
 }
 
 .features-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--first-text-color);
 }
 
 /*------OCCUPATION------*/
@@ -156,12 +159,10 @@ body {
 }
 
 .team-item-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--first-text-color);
 }
 
 /*------FOOTER------*/
@@ -180,7 +181,6 @@ body {
 
 .address-contacts {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -207,6 +207,10 @@ body {
   background-color: var(--accent-color);
 }
 
+.works-link {
+  color: inherit;
+}
+
 .works-title {
   font-weight: 700;
   font-size: 18px;
@@ -216,9 +220,7 @@ body {
 }
 
 .works-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--first-text-color);
 }
