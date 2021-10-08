@@ -7,15 +7,30 @@
   --accent-color: #2196f3;
   --contacts-color: rgba(255, 255, 255, 0.6);
   --additional-color: #000000;
+  --button-hover-color: #188ce8;
 }
 
-.body {
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .link {
   text-decoration: none;
 }
+
 .list {
   list-style: none;
 }
@@ -33,7 +48,17 @@
   color: var(--additional-color);
 }
 
-/* ------HEADER------ */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+}
+
+/*------HEADER------ */
+
 .nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -46,6 +71,11 @@
 .nav-link:focus {
   color: var(--accent-color);
 }
+
+.current-link {
+  color: var(--accent-color);
+}
+
 .contacts-link {
   font-weight: 500;
   font-size: 14px;
@@ -57,4 +87,74 @@
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
+}
+
+/*------HERO------*/
+
+.hero {
+  background-color: var(--second-title-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--first-title-color);
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--second-text-color);
+  background-color: var(--accent-color);
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--button-hover-color);
+}
+
+/*------FEATURES------*/
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+}
+
+.features-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+}
+
+/*------OCCUPATION------*/
+
+/*------TEAM------*/
+
+.team-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+}
+
+.team-item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
 }
