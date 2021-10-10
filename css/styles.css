@@ -69,12 +69,20 @@ body {
 
 /*------HEADER------ */
 
-.nav-link {
+.nav-link,
+.contacts-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.nav-link {
   color: var(--third-text-color);
+}
+
+.contacts-link {
+  color: inherit;
 }
 
 .nav-link:hover,
@@ -84,14 +92,6 @@ body {
 
 .current-link {
   color: var(--accent-color);
-}
-
-.contacts-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: inherit;
 }
 
 .contacts-link:hover,
